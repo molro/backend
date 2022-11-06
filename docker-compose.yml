@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  backend_mern:
+    build: .
+    ports: 
+      - "3009:3000"
+    links: 
+      - mongo_db
+  mongo_db:
+    image: mongo:4.2
+    ports: 
+      - "27018:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mau
+      - MONGO_INITDB_ROOT_PASSWORD=password
