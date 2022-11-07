@@ -201,9 +201,8 @@ Distributed under the GNU License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@molro](https://twitter.com/molro) - molrodev@gmail.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+![Twitter Follow](https://img.shields.io/twitter/follow/molro?style=social) ![GitHub followers](https://img.shields.io/github/followers/molro?style=social) 
+Project Link: [https://github.com/molro/backend](https://github.com/molro/backend)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -258,3 +257,5 @@ If you want to learn more about the technologies what we use, visit this sites.
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+
+
