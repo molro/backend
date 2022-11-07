@@ -1,5 +1,4 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a name="rea  "></a>
+<!-- Improved compatibility of back to top link: See: https://github.com/molro/backend/pull/73 -->
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
@@ -18,21 +17,11 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/molro/backend">
+    <img src="images/DevOps.webp" alt="Logo" width="150" height="80">
   </a>
 
   <h3 align="center">Pre built Backend</h3>
@@ -40,14 +29,11 @@
   <p align="center">
     🎯 Learn the foundations for work with pre built development environments
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/molro/backend"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/molro/backend/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/molro/backend/issues">Request Feature</a>
   </p>
 </div>
 
@@ -67,7 +53,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#installation">Installing </a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -83,8 +69,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 Reducing the time that our software takes from development to production environment is one of the principles of DevOps culture. Part of this is creating environments for software engineers for code and testing in the same conditions as production environments.
 
@@ -121,6 +105,8 @@ This pre-build backend was created using
 The following tools are prior to follow this tutorial and you will be need it running on your machine, however you can here is a quickly reminder:
 * [![Docker][docker-shield]][docker-url]
 * [![Git][git-shield]][git-url]
+* [![Postman][postman-shield]][postman-url]
+* Your Favorite IDE
 ### Prerequisites
 
 This is quick guide of how to install the tools that we will need to use our pre-built backend.
@@ -132,56 +118,73 @@ This is quick guide of how to install the tools that we will need to use our pre
     ```sh
     npm install npm@latest -g
     ```
-* Your Favorite IDE
-### Starting
-
-_These are the necessaries steps_ 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+### Installing 
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/molro/backend.git
    ```
-2. Run and Stop the backend
-   ``` docker run -ti --name mern image:0.1
+
+2. Run and stop the backend
+
+    Run the backend 
+   ``` sh 
+   docker compose up -d 
    ```
-3. Testing the Backend `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+   Stop the backend
+   ``` sh
+   docker compose down 
    ```
+
+3. Test the endpoints  
+
+    Actually the backend has only two endpoints working
+    
+    1. GET ``` http://127.0.0.1:3009 ``` - Response status 200 and Json. The first time the reponse will be an empty array ```[] ``` 
+    2. POST ``` http://127.0.0.1:3009/crear ``` - Response 200 and OK message and Post a preestablished message 
+    ```sh
+        {
+        "_id": str,
+        "tipo": "Usuario",
+        "estado": "Feliz",
+        "__v": 0
+        }
+    ``` 
+
 4. Code!
+
+    Write your code, make the API-REST growing up or connect with your frontend.
+
 5. Build
+    ```sh
+    docker compose up -d
+    ```
 6. Running the application and review the changes
 7. Stop
 8. Add, Commit and Push! 
-
+```sh
+    git add . 
+    git commit -m "Your Commit" 
+    git push
+```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [x] Create API-REST version 0.1
+- [x] Create Dockerfile 
+- [x] Create Docker Compose 
+- [x] Build Docker Image 0.1
+- [x] Push image to Docker Hub
+- [x] Create documentation version 0.1 
+- [ ] API-REST version 0.2
+    - [ ] Re-estructure endpoints 
+    - [ ] Implement authorization method  
+    - [ ] Create new docker image
+    - [ ] Push new version of image
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/molro/backend/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -238,18 +241,6 @@ If you want to learn more about the technologies what we use, visit this sites.
 [git-shield]:https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white
 [git-url]: https://git-scm.com
 
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
-
+[postman-shield]:https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white
+[postman-url]: https://www.postman.com
 
