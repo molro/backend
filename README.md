@@ -214,6 +214,7 @@ This is quick guide of how to install the tools that we will need to use our pre
     - [ ] Create new docker image
     - [ ] Push new version of image
 - [ ] Case of uses section
+- [ ] Troubleshooting
 - [ ] Acknowledgments section
 See the [open issues](https://github.com/molro/backend/issues) for a full list of proposed features (and known issues).
 
