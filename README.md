@@ -27,7 +27,7 @@
   <h3 align="center">Pre built Backend</h3>
 
   <p align="center">
-    🎯 Learn the foundations for work with pre built development environments
+    🎯 Learn the foundations for work with a pre built backend
     <br />
     <a href="https://github.com/molro/backend"><strong>Explore the docs »</strong></a>
     <br />
@@ -56,9 +56,7 @@
         <li><a href="#installation">Installing </a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -81,7 +79,7 @@ Here's why:
 * You should implement KISS principles to the rest of your life :smile:
 
 
-During this tutorial we will learn how to work with the environments crafted by our DevOps squad.
+During this tutorial we will learn how to work with the backend crafted by our DevOps squad.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,35 +87,63 @@ During this tutorial we will learn how to work with the environments crafted by 
 
 ### Built With
 
-This pre-build backend was created using 
+This is MERN pre-built backend and was created using 
 
-* [![NodeJs][nodejs-shield]][node-url]
-* [![Express.js][expressjs-shield]][expressjs-url]
-* [![MongoDB][mongodb-shield]][mongoDB-url]
-* [![Mongoose][mongoose-shield]][mongoose-url]
-* [![Docker][docker-shield]][docker-url]
+- [![NodeJs][nodejs-shield]][node-url]
+- [![Express.js][expressjs-shield]][expressjs-url]
+- [![MongoDB][mongodb-shield]][mongoDB-url]
+- [![Mongoose][mongoose-shield]][mongoose-url]
+- [![Docker][docker-shield]][docker-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-The following tools are prior to follow this tutorial and you will be need it running on your machine, however you can here is a quickly reminder:
+The following tools are prior to follow this tutorial and you will be need it running on your machine, however you can find here is a quickly reminder:
 * [![Docker][docker-shield]][docker-url]
 * [![Git][git-shield]][git-url]
 * [![Postman][postman-shield]][postman-url]
 * Your Favorite IDE
 ### Prerequisites
 
-This is quick guide of how to install the tools that we will need to use our pre-built backend.
+This is quick guide of how to install the tools that we will need to use our pre built backend.
 * Git 
+  * macOS -> Use Homebrew package manager -> [Learn more here][gitMac]
     ```sh
-    npm install npm@latest -g
+      brew install git
     ```
+  * Linux
+    * For distribution based on Debian/Ubuntu
+      ```sh
+        apt-get install git
+      ```
+    * For Fedora 
+      ```sh
+        yum install git
+      ```
+    For others distributions, visit [Download Git for Linux/Unix][gitLinux]
+
+  * Windows
+
+    You can download the latest 32-bit version [Click Here][gitWindows32bit]<br/>
+    For other downloads, visit [Dowload git for Windows][gitWindows]
+
 * Docker 
-    ```sh
-    npm install npm@latest -g
-    ```
+  * macOS 
+
+    * For Mac with Apple silicon [here][dockerapplesilicon]
+    * For Mac with Intel chip [here][dockerappleIntel]
+    
+    For more info visit [Docker Install on Mac][dockermac-url]
+  * Windows  
+    We suggest read this first [Docker install on Windows][windowsDocker-url]
+    
+    You can download clicking [Desktop][windowsdektop-url]
+  
+  * Linux/Unix 
+  
+    You can dowload directly [Docker Desktop][linuxdockerdesktop-url] here and follow the instructions, but you must know that in Linux/Unix you have two options and you can read more here [Docker Desktop or Docker Engine][linuxdocker-url]
 ### Installing 
 
 1. Clone the repo
@@ -127,11 +153,11 @@ This is quick guide of how to install the tools that we will need to use our pre
 
 2. Run and stop the backend
 
-    Run the backend 
+   -  Run the backend 
    ``` sh 
    docker compose up -d 
    ```
-   Stop the backend
+   - Stop the backend
    ``` sh
    docker compose down 
    ```
@@ -155,12 +181,16 @@ This is quick guide of how to install the tools that we will need to use our pre
 
     Write your code, make the API-REST growing up or connect with your frontend.
 
-5. Build
+5. Testing your code
+    - Running the application and review the changes
     ```sh
     docker compose up -d
     ```
-6. Running the application and review the changes
-7. Stop
+    - Stop the application
+    ```sh
+      docker compose down
+    ```
+
 8. Add, Commit and Push! 
 ```sh
     git add . 
@@ -200,7 +230,7 @@ Distributed under the GNU License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-![Twitter Follow](https://img.shields.io/twitter/follow/molro?style=social) ![GitHub followers](https://img.shields.io/github/followers/molro?style=social) 
+[![Twitter][twitter-shield]][twitter-url] [![GitHub][github-shield]][github-url]<br/>
 Project Link: [https://github.com/molro/backend](https://github.com/molro/backend)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -244,3 +274,23 @@ If you want to learn more about the technologies what we use, visit this sites.
 [postman-shield]:https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white
 [postman-url]: https://www.postman.com
 
+
+[twitter-shield]:https://img.shields.io/twitter/follow/molro?style=social
+[twitter-url]:https://www.twitter.com/molro
+[github-shield]:https://img.shields.io/github/followers/molro?style=social
+[github-url]: https://github.com/molro/
+
+[gitMac]:https://git-scm.com/download/mac
+[gitLinux]:https://git-scm.com/download/linux
+[gitWindows32bit]:https://github.com/git-for-windows/git/releases/download/v2.38.1.windows.1/Git-2.38.1-32-bit.exe 
+[gitWindows]:https://git-scm.com/download/win
+
+[dockerapplesilicon]:https://desktop.docker.com/mac/main/arm64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-arm64
+[dockerappleIntel]:https://desktop.docker.com/mac/main/amd64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-mac-amd64
+[dockermac-url]:https://docs.docker.com/desktop/install/mac-install/
+
+[windowsDocker-url]:https://docs.docker.com/desktop/install/windows-install/#wsl-2-backend
+[windowsdektop-url]:https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe
+
+[linuxdocker-url]:https://docs.docker.com/desktop/faqs/linuxfaqs/#what-is-the-difference-between-docker-desktop-for-linux-and-docker-engine
+[linuxdockerdesktop-url]:https://docs.docker.com/desktop/install/linux-install/
