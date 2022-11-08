@@ -59,7 +59,6 @@
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -223,7 +222,7 @@ See the [open issues](https://github.com/molro/backend/issues) for a full list o
 <!-- LICENSE -->
 ## License
 
-Distributed under the GNU License. See `LICENSE.txt` for more information.
+Distributed under the GPL License. See [License][license-url] file for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -277,3 +276,5 @@ Project Link: [https://github.com/molro/backend](https://github.com/molro/backen
 
 [linuxdocker-url]:https://docs.docker.com/desktop/faqs/linuxfaqs/#what-is-the-difference-between-docker-desktop-for-linux-and-docker-engine
 [linuxdockerdesktop-url]:https://docs.docker.com/desktop/install/linux-install/
+
+[license-url]:https://github.com/molro/backend/blob/main/LICENSE
