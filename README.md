@@ -21,7 +21,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/molro/backend">
-    <img src="images/DevOps.webp" alt="Logo" width="150" height="80">
+    <img src="images/DevOps.webp" alt="Logo" width="240" height="120">
   </a>
 
   <h3 align="center">Pre built Backend</h3>
@@ -213,7 +213,9 @@ This is quick guide of how to install the tools that we will need to use our pre
     - [ ] Implement authorization method  
     - [ ] Create new docker image
     - [ ] Push new version of image
-
+- [ ] Case of uses section
+- [ ] Troubleshooting section
+- [ ] Acknowledgments section
 See the [open issues](https://github.com/molro/backend/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -234,25 +236,6 @@ Distributed under the GNU License. See `LICENSE.txt` for more information.
 Project Link: [https://github.com/molro/backend](https://github.com/molro/backend)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-If you want to learn more about the technologies what we use, visit this sites.
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
